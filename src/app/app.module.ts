@@ -16,7 +16,7 @@ import { MessagesComponent }    from './messages/messages.component';
 import { MaterialComponent } from './material/material.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import 'hammerjs'
-import './polyfills';
+import '../polyfills';
 
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';

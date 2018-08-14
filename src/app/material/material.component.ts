@@ -7,10 +7,20 @@ import {MatSliderModule} from '@angular/material/slider';
   styleUrls: ['./material.component.css']
 })
 export class MaterialComponent implements OnInit {
+  foods: Food[] = [
+    {value: 'frijo-0', viewValue: 'Frijoles'},
+    {value: 'sopa-1', viewValue: 'Sopa de Guineo'},
+    {value: 'sanco-2', viewValue: 'Sancocho'}
+  ];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
 
+}
+
+export interface Food {
+  value: string;
+  viewValue: string;
 }

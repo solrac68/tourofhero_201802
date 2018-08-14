@@ -1,3 +1,29 @@
 <p>
-  material works!
+  <br>
+  <mat-slide-toggle>Deslizame!</mat-slide-toggle>
+  <br><br>
+  <mat-checkbox>Chequeame!</mat-checkbox><br>
+  <mat-checkbox>Chequeame2!</mat-checkbox><br>
+  <mat-checkbox>Chequeame3!</mat-checkbox><br>
+  <br>
+  <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Escoja una fecha">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <br><br>
+  <mat-radio-group>
+      <mat-radio-button value="1">Opcion 1</mat-radio-button>
+      <mat-radio-button value="2">Opcion 2</mat-radio-button>
+  </mat-radio-group>
+  <br><br>
+  <mat-slider></mat-slider>
+  <br><br>
+  <mat-form-field>
+      <mat-select placeholder="Comida favorita">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+  </mat-form-field>
 </p>
